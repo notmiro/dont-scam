@@ -1,57 +1,29 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
-client.on('ready', () => {
-    console.log('I am ready!');
+const Eris = require("eris");
+var x5bzteam = new Eris("MzM3Mzk4ODQzNDU4OTc3Nzky.DwDKhQ.xJW3iixRVelFsq-0cG6GGbMHQ4M");
+x5bzteam.on("ready", () => {
+    console.log("Yo! Changer [ON]");
+    onstart();
 });
-
-client.on('message', message => {
-    if (message.content === 'zg') {
-        message.reply('pong');
-      }
-});
-
-client.on('ready', async() => {
-var server = "520570432236158976"; // ايدي السررفر
-var channel = "520571686928515074";//ايدي الروم
-    setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('**كودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودز **')
-    },305);
-})
-
-client.on('ready', async() => {
-var server = "520570432236158976"; // ايدي السررفر
-var channel = "520571686928515074";//ايدي الروم
-    setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('#daily')
-    },86400);
-})
-
-client.login(process.env.BOT_TOKEN);
-const client2 = new Discord.Client();
-client2.on('ready', () => {
-    console.log('I am ready!');
-});
-
-client2.on('message', message => {
-    if (message.content === 'zg') {
-        message.reply('pong');
-      }
-});
-
-client2.on('ready', async() => {
-var server = "520570432236158976"; // ايدي السررفر
-var channel = "520571686928515074";//ايدي الروم
-    setInterval(()=>{
-    client2.guilds.get(server).channels.get(channel).send('**كودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودز **')
-    },305);
-})
-
-client2.on('ready', async() => {
-var server = "520570432236158976"; // ايدي السررفر
-var channel = "520571686928515074";//ايدي الروم
-    setInterval(()=>{
-    client2.guilds.get(server).channels.get(channel).send('#daily')
-    },86400);
-})
-
-client2.login(process.env.BOT_TOKEN2);
+x5bz = "433016026561773608";
+nick = "! NotMiro";
+function onstart(){
+    var v1 = nick.split('');
+    var counter;
+    var i=0;
+var x5bz2 = ' ';
+  var x5bz3 =   setInterval(function(){
+     
+     if (i == v1.length){
+     clearInterval(x5bz3);
+     onstart()
+      return;
+     }
+     var v2 = v1[i];
+    x5bz2 += v2;
+    x5bzteam.editNickname(x5bz, x5bz2);
+ 
+        i++;
+   
+     }, 1000);
+}
+x5bzteam.connect();
