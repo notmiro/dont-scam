@@ -34,13 +34,4 @@
     "node": "8.4.0"
   }
 }
-"eris": {
-      "version": "0.7.0",
-      "resolved": "https://registry.npmjs.org/eris/-/eris-0.7.0.tgz",
-      "integrity": "sha1-dMorOxhBhWHXWQqEnMsuWKiBsnk=",
-      "requires": {
-        "opusscript": "0.0.3",
-        "tweetnacl": "1.0.0",
-        "ws": "2.3.1"
-      }
-    },
+
