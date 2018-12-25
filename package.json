@@ -29,7 +29,7 @@
     "youtube-info": "^1.2.0",
     "ytdl-core": "^0.20.3"
     "eris": "0.7.0",
-    "version": "0.7.0",
+    "version": {
     "resolved": "https://registry.npmjs.org/eris/-/eris-0.7.0.tgz",
     "integrity": "sha1-dMorOxhBhWHXWQqEnMsuWKiBsnk=",
     "requires": {
